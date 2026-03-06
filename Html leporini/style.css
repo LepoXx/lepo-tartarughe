@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Condensed:wght@400;700&display=swap');
+body {
+    background: #fdf5e6; 
+    color: #222;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 20px;
+    border: 10px solid #2e7d32; 
+}
+
+#testata {
+    text-align: center;
+    padding: 40px 0;
+    background: #2e7d32;
+    color: white;
+    margin-bottom: 30px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.griglia-mista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pezzo {
+    background: #fff;
+    border: 4px solid #000;
+    padding: 20px;
+    width: 320px;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: crosshair;
+}
+
+
+.pezzo:hover {
+    transform: scale(1.07) rotate(0deg) !important;
+    box-shadow: 20px 20px 0px rgba(0,0,0,0.8);
+    z-index: 5;
+}
+
+.terra-style { transform: rotate(-2deg); border-color: #8d6e63; }
+.acqua-style { transform: rotate(2deg); border-color: #0288d1; }
+
+.sticker {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #ffeb3b;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 2px solid #000;
+    font-size: 0.8rem;
+    transform: rotate(-10deg);
+}
+
+.cornice-foto img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+.punti-elenco li {
+    font-weight: 400;
+    padding: 5px 0;
+    border-bottom: 1px dashed #ddd;
+}
+}
+
+.punti-elenco li {
+    padding: 5px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.punti-elenco li::before {
+    content: "🐢";
+    margin-right: 10px;
+}
+
+.zona-dati {
+    max-width: 800px;
+    margin: 60px auto;
+}
+
+.tabellaccia {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 5px solid #222;
+}
+
+.tabellaccia th {
+    background: #222;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+}
+
+.tabellaccia td {
+    padding: 15px;
+    border: 2px solid #222;
+}
+
+.tabellaccia tr:nth-child(even) { background: #eee; }
+
+.video-corner {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.titolo-video {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.flex-video {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-video video {
+    width: 400px;
+    border: 5px solid #2e7d32;
+    border-radius: 0; 
+    background: #000;
+}
+
+.footer-lowfi {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: right;
+    font-size: 0.7rem;
+    color: #555;
+    border-top: 2px solid #ccc;
+}
